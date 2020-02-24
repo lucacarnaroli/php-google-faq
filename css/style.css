@@ -8,6 +8,12 @@
   width: 100%;
   height: 100px;
   border-bottom: 1px solid grey;
+  position: fixed;
+  background-color: white;
+}
+.block {
+  height: 100px;
+  width: 100%;
 }
 .box-header {
   padding: 20px;
@@ -47,7 +53,7 @@
   margin-bottom: 30px;
   line-height: 30px;
 }
-.paragrafo {
+p {
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 30px;
@@ -57,4 +63,25 @@
   height: 30px;
   border-bottom: 5px solid blue;
   color: blue;
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-lingua {
+  margin-right: 18%;
+}
+.list-footer {
+  margin-left: 18%;
+}
+.list-footer li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 12px;
+  color: grey;
 }
