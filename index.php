@@ -4,7 +4,7 @@ $db = [
   "Come state implementando la recente decisione della Corte di giustizia dell'/'Unione europea (CGUE) relativa al diritto all'/'oblio?" =>
   [
     [
-      "La recente decisione della Corte di giustizia dell'/'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi."
+      "La recente <a>decisione della Corte di giustizia dell'/'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi."
     ],
 
     [
@@ -61,18 +61,49 @@ $db = [
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Google-form</title>
   </head>
   <body>
-    <?php foreach ($db as $domanda => $array_risposte) { ?>
-      <h2><?php echo $domanda; ?></h2>
-      <?php foreach ($array_risposte as $risposta) {?>
-        <?php foreach ($risposta as $paragrafo){ ?>
-          <p><?php echo $paragrafo ?></p>
-        <?php } ?>
-      <?php } ?>
+    <header>
+      <div class="header">
+        <div class="box-header">
+          <div class="section-top">
+            <img src="img/google.png" alt="">
+            <h3 class="privacy">Privacy e terimini</h3>
+          </div>
+          <div class="section-bottom">
+            <ul class="section">
+              <li>Introduzione</li>
+              <li>Norme sulla privacy</li>
+              <li>Termini di servizio</li>
+              <li>Tecnologie</li>
+              <li>
+                <div class="faq-frequenti">
+                Domande frequenti
+              </div>
+            </li>
+            </ul>
+            <div class="">
+              <p class="account">Account Google</p>
+            </div>
+          </div>
 
-    <?php } ?>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <?php foreach ($db as $domanda => $array_risposte) { ?>
+        <h2 class="title"><?php echo $domanda; ?></h2>
+        <?php foreach ($array_risposte as $risposta) {?>
+          <?php foreach ($risposta as $paragrafo){ ?>
+            <p class="paragrafo"><?php echo $paragrafo ?></p>
+          <?php } ?>
+        <?php } ?>
+
+      <?php } ?>
+    </div>
+
 
   </body>
 </html>

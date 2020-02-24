@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid grey;
+}
+.box-header {
+  padding: 20px;
+}
+.section-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section,
+.account {
+  margin-top: 25px;
+}
+.section li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+.section-top {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+.section-top img {
+  height: 25px;
+  margin-right: 10px;
+}
+.main {
+  margin-top: 80px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.title {
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+.paragrafo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 15px;
+}
+.faq-frequenti {
+  height: 30px;
+  border-bottom: 5px solid blue;
+}
