@@ -20,25 +20,28 @@
 .section,
 .account {
   margin-top: 25px;
+  color: grey;
 }
 .section li {
   list-style: none;
   display: inline-block;
   margin-right: 20px;
+  color: grey;
 }
 .section-top {
   display: flex;
   flex-direction: row;
   align-items:center;
+  color: grey;
 }
 .section-top img {
   height: 25px;
   margin-right: 10px;
 }
 .main {
-  margin-top: 80px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-top: 100px;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 .title {
   margin-bottom: 30px;
@@ -48,9 +51,10 @@
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 30px;
-  font-size: 15px;
+  font-size: 16px;
 }
 .faq-frequenti {
   height: 30px;
   border-bottom: 5px solid blue;
+  color: blue;
 }
